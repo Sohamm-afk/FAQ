@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | MetaSkillGroup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="faq-page">
+    <header class="page-heading">
+      <p class="eyebrow">Help center</p>
+      <h1>How can we help?</h1>
+      <p>Browse the topics or open a question to find the answer you need.</p>
+    </header>
+
+    <section class="most-helpful" aria-labelledby="most-helpful-title">
+      <div>
+        <p class="eyebrow">Reader picks</p>
+        <h2 id="most-helpful-title">Most helpful</h2>
+      </div>
+      <ul id="most-helpful-list" class="most-helpful-list"></ul>
+    </section>
+
+    <div id="app-notice" class="app-notice" role="status" aria-live="polite" hidden></div>
+
+    <div class="faq-layout">
+      <nav class="category-nav" aria-label="FAQ categories">
+        <h2 class="visually-hidden">Categories</h2>
+        <ul id="category-list"></ul>
+      </nav>
+
+      <div id="faq-groups" class="faq-content"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">Still have questions? We’re happy to help.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
